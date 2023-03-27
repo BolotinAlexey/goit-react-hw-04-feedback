@@ -47,9 +47,9 @@ function App() {
       <Section title="Statistics">
         {countTotalFeedback() !== 0 ? (
           <StatisticElement
-            good
-            neutral
-            bad
+            good={good}
+            neutral={neutral}
+            bad={bad}
             total={countTotalFeedback()}
             positivePercentage={countPositiveFeedbackPercentage()}
           />
